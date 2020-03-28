@@ -1,4 +1,7 @@
-{:deps {}
+{:deps {metosin/reitit-ring       {:mvn/version "0.4.2"}
+        ring/ring-jetty-adapter   {:mvn/version "1.6.3"}
+        seancorfield/next.jdbc    {:mvn/version "1.0.409"}
+        org.postgresql/postgresql {:mvn/version "42.1.4"}}
  ; https://docs.cider.mx/cider/basics/middleware_setup.html
  :aliases {:cider {:extra-deps {cider/cider-nrepl {:mvn/version "0.22.4"}}
                    :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}
